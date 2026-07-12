@@ -2,6 +2,10 @@
 
 set -e
 
+# Update the system
+
+sudo dnf update
+
 # Development
 
 sudo dnf install -y \
@@ -12,6 +16,7 @@ sudo dnf install -y \
 	cmake \
 	gdb \
 	clang \
+	vim \
 	python3-pip \
 	python3-devel \
 	pipx \
@@ -19,7 +24,9 @@ sudo dnf install -y \
 	unzip \
 	zip \
 	tar \
-	shellcheck
+	shellcheck \
+	yazi
+
 
 # Linux System
 
@@ -50,4 +57,5 @@ sudo dnf install -y \
 
 sudo dnf install -y \
 	podman \
-	podman-docker
+	podman-docker \
+	podman-compose
