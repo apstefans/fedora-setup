@@ -1,0 +1,43 @@
+return {
+	"xiyaowong/transparent.nvim",
+	config = function()
+		require("transparent").setup({
+			groups = {
+				"Normal",
+				"NormalNC",
+				"Comment",
+				"Constant",
+				"Special",
+				"Identifier",
+				"Statement",
+				"PreProc",
+				"Type",
+				"Underlined",
+				"Todo",
+				"String",
+				"Function",
+				"Conditional",
+				"Repeat",
+				"Operator",
+				"Structure",
+				"LineNr",
+				"NonText",
+				"SignColumn",
+				"CursorLine",
+				"CursorLineNr",
+				"EndOfBuffer",
+				"WinSeparator",
+			},
+			extra_groups = { "NeoTreeNormal", "NeoTreeNormalNC", "NeoTreeCursorLine", "" },
+			exclude_groups = {
+				"NormalFloat",
+				"FloatBorder",
+				"Term*",
+				"winblend",
+				"lualine",
+				"StatusLine",
+				"StatusLineNC",
+			},
+		})
+	end,
+}
