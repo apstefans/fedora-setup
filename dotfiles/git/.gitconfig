@@ -1,0 +1,15 @@
+[user]
+	name = Arnar Petur Stefansson
+	email = arnarpje@gmail.com
+[init]
+	defaultBranch = main
+
+[core]
+	edtior = nvim
+
+[alias]
+	s = status
+	co = checkout
+	a = add
+	c = commit
+	d = diff
