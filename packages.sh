@@ -24,8 +24,7 @@ sudo dnf install -y \
 	unzip \
 	zip \
 	tar \
-	shellcheck \
-	yazi
+	shellcheck 
 
 
 # Linux System

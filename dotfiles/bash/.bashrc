@@ -23,3 +23,6 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+alias m269-26j='cd "/home/apstefans/m269-26j";source /home/apstefans/venvs/m269-26j/bin/activate;unalias allowed 2> /dev/null'
+alias nb='source /home/apstefans/venvs/m269-26j/bin/activate;unalias allowed 2> /dev/null;jupyter lab --custom-css &'
