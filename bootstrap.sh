@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-set -e
+cd "$(dirname "$0")"
 
 echo "Installing packages..."
 ./packages.sh
 
 echo "Installing dotfiles..."
 cd dotfiles
-stow bash git nvim tmux vim yazi
+stow -t "$HOME" bash git nvim tmux vim yazi
 
-echo "Done"
+echo "Done."
