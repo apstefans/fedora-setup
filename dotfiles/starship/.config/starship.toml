@@ -1,0 +1,50 @@
+add_newline = true
+
+format = """
+[┏](bold cyan) $time$username$hostname$cmd_duration
+[┣](bold cyan) $directory$git_branch$git_status
+[┗](bold cyan) $character"""
+
+[time]
+disabled = false
+time_format = "%H:%M:%S"
+style = "bold cyan"
+format = "[󰥔 $time]($style) "
+
+[username]
+show_always = true
+style_user = "bold purple"
+format = "[󰆍 $user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bold blue"
+format = "[ :: $hostname]($style)"
+
+[directory]
+style = "bold green"
+truncation_length = 0
+truncate_to_repo = false
+format = "[󰉋 $path]($style) "
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold yellow"
+untracked = "[+](bold green)"
+modified = "[!](bold yellow)"
+staged = "[●](bold green)"
+deleted = "[✘](bold red)"
+format = "[$all_status$ahead_behind]($style)"
+
+[cmd_duration]
+min_time = 2000
+style = "bold yellow"
+format = " [󱎫 $duration]($style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
